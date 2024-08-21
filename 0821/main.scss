@@ -1,0 +1,81 @@
+$color : red;
+$color2 : blue;
+$fontSize : 20px;
+
+@mixin box {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+}
+@mixin box2 ($size: 100px, $color: blue) {
+    width: $size;
+    height: $size;
+    background: $color;
+}
+
+.container{
+    h1 {
+        color: $color;
+    }
+
+    ul {
+        li {
+            list-style: none;
+            padding: 10px;
+
+            .name {
+                color: $color2;
+                font-size: $fontSize;
+            }
+
+            .age {
+                color: $color;
+            }
+        }
+    }
+
+    .plus {
+        &-small {
+            font-size: 10px;
+        }
+
+        &-large {
+            font-size: 30px;
+        }
+
+        &-bold {
+            font-weight: 800;
+        }
+
+        &-italic {
+            font-style: italic;
+        }
+    }
+
+    .box {
+        font: {
+            weight: 800;
+            size: 30px;
+            style: italic; 
+        };
+    }
+
+    .boxwrap {
+        width: 30px + 20px;
+        height: 100px - 60px;
+        background: greenyellow;
+        padding: 10px * 3;
+        font-size: (20px / 2);
+        margin: 20px % 8;
+    }
+
+    .box2 {
+        @include box2 (200px, skyblue);
+    }
+
+    .box3:nth-child(1) {
+        width: 100px;
+        height: 100px;
+        background: gray;
+    }
+}

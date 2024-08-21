@@ -1,0 +1,49 @@
+.container h1 {
+  color: red;
+}
+.container ul li {
+  list-style: none;
+  padding: 10px;
+}
+.container ul li .name {
+  color: blue;
+  font-size: 20px;
+}
+.container ul li .age {
+  color: red;
+}
+.container .plus-small {
+  font-size: 10px;
+}
+.container .plus-large {
+  font-size: 30px;
+}
+.container .plus-bold {
+  font-weight: 800;
+}
+.container .plus-italic {
+  font-style: italic;
+}
+.container .box {
+  font-weight: 800;
+  font-size: 30px;
+  font-style: italic;
+}
+.container .boxwrap {
+  width: 50px;
+  height: 40px;
+  background: greenyellow;
+  padding: 30px;
+  font-size: 10px;
+  margin: 4px;
+}
+.container .box2 {
+  width: 200px;
+  height: 200px;
+  background: skyblue;
+}
+.container .box3:nth-child(1) {
+  width: 100px;
+  height: 100px;
+  background: gray;
+}/*# sourceMappingURL=main.css.map */
